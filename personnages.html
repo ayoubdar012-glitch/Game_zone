@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Personnages</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Interne spécifique aux personnages */
+        .personnage-card {
+            background: linear-gradient(145deg, #1e3a5f 0%, #0f2640 20%);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 40px 0;
+            margin-left: 150px;
+            border-left: 5px solid #e63946;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            overflow: hidden; 
+            position: relative;
+            width: fit-content;   
+            max-width: 850px; 
+        }
+        
+        .personnage-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 30px rgba(230, 57, 70, 0.4);
+        }
+     
+    
+        .personnage-card img {
+            float: right; 
+            width: 200px; 
+            height: auto;
+            margin: 0 0 15px 20px; 
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border: 3px solid #e63946;
+        }
+        
+        .personnage-card h3 {
+            color: #e63946;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        
+        .personnage-card p {
+            color: #ddd;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+        
+        .personnage-card p strong {
+            color: #a8dadc;
+        }
+        
+        .stat {
+            display: inline-block;
+            background-color: rgba(230, 57, 70, 0.3);
+            padding: 8px 15px;
+            margin: 5px 5px 5px 0;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid rgba(230, 57, 70, 0.5);
+        }
+        
+        
+        .personnage-card::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+      
+        @media (max-width: 768px) {
+            .personnage-card img {
+                float: none;
+                display: block;
+                margin: 0 auto 15px auto;
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    
+    
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ayoubdar012-glitch.github.io/GameZone/index.html" alt="QR Code" class="qr-code">
+   
+
+    <a href="#top" class="btn-haut">↑ Haut</a>
+    
+
+    <header>
+        <img src="img/logo.svg" alt="Logo GameZone">
+        <h1>GameZone</h1>
+        <p>Personnages emblématiques du jeu vidéo</p>
+    </header>
+    
+   
+    <nav>
+        <a href="index.html">Accueil</a>
+       
+        <a href="magazin.html">Magasin_jeux</a>
+        <a href="personnages.html">Personnages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+
+    <main>
+        
+        <section>
+            <h2>🎭 Personnages Emblématiques</h2>
+            <p style="text-align: center; color: #a8dadc; font-size: 1.1em; margin-bottom: 30px;">
+                Découvrez les héros et anti-héros qui ont marqué l'histoire du jeu vidéo
+            </p>
+            
+         
+            <div class="personnage-card">
+             
+                <img src="img/11.jpg" alt="Mario">
+                
+                <h3>🍄 Mario - Le Plombier Héroïque</h3>
+                <p><strong>Jeu :</strong> Super Mario Bros (et série)</p>
+                <p><strong>Première apparition :</strong> 1981 (Donkey Kong)</p>
+                <p><strong>Description :</strong> L'icône absolue du jeu vidéo. Ce plombier italien au chapeau rouge n'a cessé de sauver la Princesse Peach et le Royaume Champignon depuis plus de 40 ans. Symbole de Nintendo et mascotte la plus reconnaissable du gaming.</p>
+                
+                <div style="margin-top: 15px;">
+                    <span class="stat">💪 Force: 8/10</span>
+                    <span class="stat">⚡ Vitesse: 7/10</span>
+                    <span class="stat">🎯 Popularité: 10/10</span>
+                </div>
+            </div>
+            
+         
+            <div class="personnage-card">
+            
+                <img src="img/22.jpg" alt="Link">
+                
+                <h3>⚔️ Link - Le Héros du Temps</h3>
+                <p><strong>Jeu :</strong> The Legend of Zelda (série)</p>
+                <p><strong>Première apparition :</strong> 1986</p>
+                <p><strong>Description :</strong> Héros éternel d'Hyrule, Link se réincarne à travers les âges pour combattre le mal. Armé de l'épée de légende et du bouclier Hylien, il est le courage incarné. Silencieux mais déterminé, il sauve continuellement la Princesse Zelda et le royaume.</p>
+                
+                <div style="margin-top: 15px;">
+                    <span class="stat">💪 Force: 9/10</span>
+                    <span class="stat">⚡ Vitesse: 8/10</span>
+                    <span class="stat">🧠 Intelligence: 9/10</span>
+                </div>
+            </div>
+            
+            
+            <div class="personnage-card">
+              
+                <img src="img/33.png" alt="Kratos">
+                
+                <h3>🪓 Kratos - L"homme de la Guerre</h3>
+                <p><strong>Jeu :</strong> God of War (série)</p>
+                <p><strong>Première apparition :</strong> 2005</p>
+                <p><strong>Description :</strong> Ancien guerrier spartiate devenu homme de la Guerre. Après avoir détruit le panthéon grec, il s'est installé dans les terres nordiques avec son fils Atreus. Brutal, puissant, mais aussi père protecteur cherchant la rédemption.</p>
+                
+                <div style="margin-top: 15px;">
+                    <span class="stat">💪 Force: 10/10</span>
+                    <span class="stat">⚔️ Combat: 10/10</span>
+                    <span class="stat">😡 Rage: 11/10</span>
+                </div>
+            </div>
+            
+             <div class="personnage-card">
+               
+                <img src="img/44.png" alt="Geralt de Riv">
+                
+                <h3>🐺 Geralt de Riv - Le Sorceleur</h3>
+                <p><strong>Jeu :</strong> The Witcher (série)</p>
+                <p><strong>Première apparition :</strong> 2007</p>
+                <p><strong>Description :</strong> Chasseur de monstres professionnel doté de capacités surnaturelles. Geralt parcourt le Continent en accomplissant des contrats, tout en cherchant à protéger Ciri. Cynique en apparence mais au grand cœur, il navigue dans un monde moralement complexe.</p>
+                
+                <div style="margin-top: 15px;">
+                    <span class="stat">⚔️ Épée: 10/10</span>
+                    <span class="stat">🔮 Magie: 8/10</span>
+                    <span class="stat">🧠 Sagesse: 9/10</span>
+                </div>
+            </div>
+        </section>
+        
+        
+        <aside>
+            <h3>🎮 Le saviez-vous ?</h3>
+            <p>Mario a d'abord été nommé "Jumpman" lors de sa première apparition dans Donkey Kong en 1981.</p>
+            <p>Lara Croft a été la première héroïne de jeu vidéo à devenir une icône culturelle mondiale.</p>
+            <p>Master Chief ne retire jamais son casque dans les jeux principaux Halo, préservant le mystère du personnage.</p>
+        </aside>
+        
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2026 GameZone - Tous droits réservés</p>
+        <p>Créé par Ayoubdar</p>
+        <pre>
+   _____ _____ _____ _____ 
+  |     |  _  |     |   __|
+  |  |  |     | | | |   __|
+  |_____|__|__|_|_|_|_____|
+        
+    🎮 GAME ZONE 🎮
+        </pre>
+        <p>
+            <a href="mailto:contact@gamezone.com" class="btn-email">📧 Nous contacter</a>
+        </p>
+    </footer>
+    
+</body>
+</html>

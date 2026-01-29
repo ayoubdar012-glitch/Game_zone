@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Magasin de Jeux</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS pour le magasin de jeux */
+        .store-header {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .store-header h2 {
+            color: #e63946;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .store-header p {
+            color: #a8dadc;
+            font-size: 1.2em;
+        }
+        .games-store-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+    
+        .game-store-card {
+            position: relative;
+            background: linear-gradient(145deg, #1e3a5f 0%, #0f2640 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .game-store-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(230, 57, 70, 0.5);
+        }
+        
+        .game-store-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 3px solid #e63946;
+        }
+        
+        .game-store-card h3 {
+            color: #f1faee;
+            padding: 15px;
+            font-size: 1.1em;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .game-store-card:hover h3 {
+            background: rgba(230, 57, 70, 0.3);
+            color: #fff;
+        }
+        
+        
+        
+       
+        /* Responsive */
+        @media (max-width: 768px) {
+            .games-store-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+            
+            .game-store-card img {
+                height: 120px;
+            }
+            
+            .game-store-card h3 {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+            
+            .store-header h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    
+    
+       <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ayoubdar012-glitch.github.io/GameZone/index.html" alt="QR Code" class="qr-code">
+    
+   
+    <a href="#top" class="btn-haut">↑ Haut</a>
+    
+   
+    <header>
+        <img src="img/logo.svg" alt="Logo GameZone">
+        <h1>GameZone</h1>
+        <p>Magasin de Jeux Vidéo</p>
+    </header>
+    
+    
+    <nav>
+        <a href="index.html">Accueil</a>
+         <a href="magazin.html">Magasin_jeux</a>
+        <a href="personnages.html">Personnages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <main>
+        <section>
+            <div class="games-store-grid" id="gamesGrid">
+                
+                
+                <a href="https://www.crazygames.com/game/fragen" target="_blank" class="game-store-card" data-category="action">
+                   
+                    <img src="image/1.avif" alt="Combat Reloaded">
+                    <h3>Fragen</h3>
+                </a>
+                
+        
+                <a href="https://www.crazygames.com/game/rocketgoal-io" target="_blank" class="game-store-card" data-category="course">
+                    <img src="image/2.png" alt="Rocket League">
+                    <h3>Rocket Goal</h3>
+                </a>
+              
+
+                <a href="https://www.crazygames.com/game/smash-karts" target="_blank" class="game-store-card" data-category="course">
+                    
+                    <img src="image/33.avif" alt="Karts">
+                    <h3>Karts</h3>
+                </a>
+             
+                <a href="https://www.crazygames.com/game/shellshockersio" target="_blank" class="game-store-card" data-category="action">
+                  
+                    <img src="image/4.png" alt="Shell Shockers">
+                    <h3>Shell Shockers</h3>
+                </a>
+                
+                <a href="https://poxel.io" target="_blank" class="game-store-card" data-category="io">
+                    <img src="image/5.png" alt="Poxel.io">
+                    <h3>Poxel.io</h3>
+                </a>
+                
+               
+                <a href="https://kour.io" target="_blank" class="game-store-card" data-category="io">
+                    <img src="image/6.avif" alt="Kour.io">
+                    <h3>Kour.io</h3>
+                </a>
+                
+                <a href="https://www.crazygames.com/game/super-star-car" target="_blank" class="game-store-card" data-category="course">
+                   
+                    <img src="image/7.png" alt="Super Star Car">
+                    <h3>Super Star Car</h3>
+                </a>
+                
+              
+                <a href="https://gulper.io/" target="_blank" class="game-store-card" data-category="io">
+                    <img src="image/8.jpg" alt="Gulper.io">
+                    <h3>Gulper.io</h3>
+                </a>
+               
+            </div>
+        </section>
+        
+        <aside style="margin-top: 40px;">
+            <h3>Astuce</h3>
+            <p>Tous les jeux sont gratuits et jouables directement dans votre navigateur !</p>
+        </aside>
+        
+    </main>
+    
+   <footer>
+        <p>&copy; 2026 GameZone - Tous droits réservés</p>
+        <p>Créé par Ayoubdar</p>
+        <pre>
+   _____ _____ _____ _____ 
+  |     |  _  |     |   __|
+  |  |  |     | | | |   __|
+  |_____|__|__|_|_|_|_____|
+        
+    🎮 GAME ZONE 🎮
+        </pre>
+        <p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkVTRnpBnHflQmjwftzjFgPMrTjMJbLFnWwRpWMBlBWCQwDdDslDPwfjnwTkkxBvcZStMQ" class="btn-email" target="_blank">📧 Nous contacter</a>
+        </p>
+    </footer>
+    </body>
+    </html>
